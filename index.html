@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <h1>T O D O</h1>
+        <div id="userInput" class="app">
+            <button type="button" id="inputBtn">+</button>
+            <input type="text" placeholder="Add a new task to do..." id="inputText">
+        </div>
+        <div id="output">
+            <div id="userOutput" class="app">
+            </div>
+            <div id="userInfo" class="app info">
+                <p id="countLeft">0 tasks left</p>
+                <div id="radioField">
+                    <input id="all" type="radio" name="radioInput" value="all">
+                    <label class="radio-label" for="all">All</label>
+                    <input id="active" type="radio" name="radioInput" value="active">
+                    <label class="radio-label" for="active">Active</label>
+                    <input id="completed" type="radio" name="radioInput" value="completed">
+                    <label class="radio-label" for="completed">Completed</label>
+                </div>
+                <button type="button" id="clearBtn" >Clear Completed</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
